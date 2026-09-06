@@ -21,15 +21,15 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-		  - name: Run tests
-		    run: mvn test
+      - name: Run tests
+        run: mvn test
 
-		  - name: CD - Prepare release
-		    run: echo "Tests passed - preparing release"
+      - name: CD - Prepare release
+        run: echo "Tests passed - preparing release"
 
-		  - name: Upload test reports
-		    uses: actions/upload-artifact@v4
-		    if: always()
-		    with:
-		      name: test-reports
-		      path: target/surefire-reports/
+      - name: Upload test reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-reports
+          path: target/surefire-reports/
