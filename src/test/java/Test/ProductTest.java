@@ -14,8 +14,8 @@ public class ProductTest {
     	ApiClient api = new ApiClient();
 
     	Response response = api.get("/products/1");
-//    	assertEquals(200, response.statusCode());
-    	assertEquals(201, response.statusCode());
+    	assertEquals(200, response.statusCode());
+//    	assertEquals(201, response.statusCode());
     
     }
     
