@@ -2,14 +2,8 @@ package Test;
 
 import org.junit.jupiter.api.Test;
 
-import static io.restassured.RestAssured.given;
-import static org.junit.Assert.assertEquals;
-
-import java.util.List;
-
-import config.RequestSpec;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import io.restassured.response.Response;
-import models.Product;
 import utils.ApiClient;
 
 public class ProductTest {
